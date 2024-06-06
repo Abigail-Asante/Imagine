@@ -64,3 +64,28 @@ const bottle1 = {
   for (let i=0; i<= 5; i++) {
     console.log('we did it!', i);
   }
+
+  // functions
+// Defining a function
+function login(username, password) {
+  // validate username and password
+  if (!username || !password) {
+    return 'username or password not provided';
+  }
+  // verify username and password
+  if (username == 'blessing' && password == '1234') {
+    return 'user is logged in';
+} else {
+  return 'invalid username or password';
+}
+}
+// Invoking a function
+login('blessing', '1234');
+
+// Basic Arithmetic Operations
+11+12;
+1+0.5;
+45/7;
+43-2;
+45/24;
+45%24;

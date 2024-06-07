@@ -89,3 +89,34 @@ login('blessing', '1234');
 43-2;
 45/24;
 45%24;
+
+
+// Strings in Javascript
+// Concatenation
+const firstname = 'Abigail';
+const lastname = 'Asante';
+const middlename = 'Afriyie'
+firstname + ' ' + middlename + ' ' + lastname;
+// Template literal
+`${firstname} ${middlename} ${lastname}`;
+
+// String Methods
+
+let fullname = 'Abigail Asante';
+
+fullname.length
+fullname.toUpperCase()
+fullname.toLowerCase()
+fullname.charAt(3)
+fullname.slice(0,5)
+fullname.split("")
+fullname.replace("Asante", "Afriyie")
+fullname.indexOf("Abigail")
+
+// String convertion
+Number("3.243")
+parseInt("3.243")
+parseFloat("3.243")
+let amount = 18000
+console.log(`GHS$(amount)`)
+amount.toString()

@@ -206,3 +206,86 @@ function isEven(number) {
 isEven(3)
 numbers.filter(isEven)
 
+
+
+// write a function that will allow a user to reset their password
+const user = {
+  email: 'asantea331@gmail.com',
+  password: '4321'
+}
+
+function resetPassword(email, password) {
+  // check if email and new password was provided
+  if (!email || !newPassword) {
+    return "Email or password not provided";
+  }
+  // check if provided email is correct
+  if (email === user.email){
+    // update password with new one
+    user.password = newPassword;
+    return "Password reset sucessful";
+  }
+  if (email !== user.email){
+    return "Invalid email";
+  }
+  // newPassword(1234);
+}
+user;
+// resetPassword('asantea331@gmail.com', '123')
+
+resetPassword('asantea331@gmail.com', '1234');
+user;
+
+
+
+// You have been given an array of students with some of them marked as absent and others marked as present.
+// Write a function that returns the total number of students present.
+const students = [
+  {id: 1, present: true},
+  {id: 2, present: true},
+  {id: 3, present: false},
+  {id: 4, present: true},
+  {id: 5, present: false},
+]
+function studentsPresent(student) {
+  // Define a variable to track the total present
+  let total = 0;
+  // Begin a loop
+  for (let i = 0; i < students.length; i++) {
+    // For any iteration if student is present then increase total present by 1;
+    if(student[i].present === true) {
+      total++
+    }
+    
+  }
+  // Retun total
+  return total;
+}
+
+
+
+
+
+
+
+
+// Classes in Javascript
+class Laptop {
+  constructor(brand, color) {
+    this.brand = brand;
+    this.color = color;
+  }
+}
+
+const laptop1 = new Laptop('Dell', 'black');
+const laptop2 = new Laptop('HP', 'silver');
+laptop1.brand
+laptop2.brand
+laptop1.color
+
+
+
+
+
+
+

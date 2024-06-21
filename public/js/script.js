@@ -150,16 +150,16 @@ participants;
 // Arrays in Javascript
 // const users = [
 {
-  username: 'bgailz',
-    password: '1234',
-      email: 'asantea331@gmail.com'
-},
+  username: 'bgailz';
+    password: '1234';
+      email: 'asantea331@gmail.com';
+};
 {
-  username: 'bgailz',
-    password: '1234',
-      email: 'asantea331@gmail.com'
-},
-];
+  username: 'bgailz';
+    password: '1234';
+      email: 'asantea331@gmail.com';
+}
+;
 users;
 
 
@@ -209,10 +209,10 @@ numbers.filter(isEven)
 
 
 // write a function that will allow a user to reset their password
-const user = {
-  email: 'asantea331@gmail.com',
-  password: '4321'
-}
+// const user = {
+//   email: 'asantea331@gmail.com',
+//   password: '4321'
+// }
 
 function resetPassword(email, password) {
   // check if email and new password was provided
@@ -285,6 +285,59 @@ laptop1.color
 
 
 
+const fruits = [
+  {
+      id: 1,
+      name: 'bannana',
+      color: 'yellow',
+      weight: '1kg',
+      price: 10,
+    ispublished: true
+  },  {
+      id: 2,
+      name: 'pawpaw',
+      color: 'green',
+      weight: '2kg',
+      price: 10,
+    ispublished: false
+  },  {
+      id: 3,
+      name: 'pear',
+      color: 'green',
+      weight: '3kg',
+      price: 10,
+    ispublished: true
+  },  {
+      id: 4,
+      name: 'orange',
+      color: 'yellow',
+      weight: '4kg',
+      price: 10,
+    ispublished: false
+  },  {
+      id: 5,
+      name: 'coconut',
+      color: 'yellow',
+      weight: '5kg',
+      price: 10,
+    ispublished: true
+  }
+]
+console.log(fruits)
+
+fruits.map(fruits => {
+return(fruits.weight)
+})
+fruits.map(fruits => {
+return(fruits.color)
+})
+
+fruits.map(fruits => {
+return(fruits.name)
+})
+fruits.filter(item =>{
+return(item.ispublished ==false)
+})
 
 
 
